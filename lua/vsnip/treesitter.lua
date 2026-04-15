@@ -4,7 +4,10 @@ local is_available = pcall( require, "nvim-treesitter.parsers" )
 
 local function get_parser_filetype ( lang )
   if lang then
-    -- vim.treesitter.language.get_filetypes( lang ) or
+
+    -- NOTE: first element [ 1 ] is always the lang itself
+    -- vim.treesitter.language.get_filetypes( lang )[ 2 ]
+
     return lang
   else
     return ""
