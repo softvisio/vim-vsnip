@@ -1,6 +1,6 @@
 local M = {}
 
-local is_available = pcall( require, "nvim-treesitter.parsers" )
+local is_available = pcall( require, "nvim-treesitter.util" )
 
 local function get_parser_filetype ( lang )
   if lang then
