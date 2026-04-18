@@ -2,19 +2,20 @@
   "name": "vim-vsnip",
   "version": "1.0.0",
   "description": "Fork of hrsh7th/vim-test-snips",
-  "homepage": "https://github.com/hrsh7th/vim-test-snips#readme",
+  "homepage": "https://github.com/softvisio/vim-vsnip",
   "bugs": {
-    "url": "https://github.com/hrsh7th/vim-test-snips/issues"
+    "url": "https://github.com/softvisio/vim-vsnip/issues",
+    "email": "root <root@softvisio.net>"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hrsh7th/vim-test-snips.git"
+    "url": "git+https://github.com/softvisio/vim-vsnip.git"
   },
-  "license": "MIT",
-  "author": "hrsh7th",
+  "license": "ISC",
+  "author": "root <root@softvisio.net>",
   "scripts": {
+    "lint": "vint .",
     "open": "nvim -u .vimrc",
-    "test": "run-s test:*",
     "test:01": "THEMIS_VIM=vim EXCLUSIVE=0 VIRTUALEDIT=0 themis ./spec",
     "test:02": "THEMIS_VIM=vim EXCLUSIVE=0 VIRTUALEDIT=1 themis ./spec",
     "test:03": "THEMIS_VIM=vim EXCLUSIVE=1 VIRTUALEDIT=0 themis ./spec",
@@ -22,8 +23,7 @@
     "test:05": "THEMIS_VIM=nvim EXCLUSIVE=0 VIRTUALEDIT=0 themis ./spec",
     "test:06": "THEMIS_VIM=nvim EXCLUSIVE=0 VIRTUALEDIT=1 themis ./spec",
     "test:07": "THEMIS_VIM=nvim EXCLUSIVE=1 VIRTUALEDIT=0 themis ./spec",
-    "test:08": "THEMIS_VIM=nvim EXCLUSIVE=1 VIRTUALEDIT=1 themis ./spec",
-    "lint": "vint ."
+    "test:08": "THEMIS_VIM=nvim EXCLUSIVE=1 VIRTUALEDIT=1 themis ./spec"
   },
   "husky": {
     "hooks": {
