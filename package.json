@@ -1,5 +1,5 @@
 {
-  "name": "vim-vsnip",
+  "name": "@neovim-plugins/vim-vsnip",
   "version": "1.0.0",
   "description": "Fork of hrsh7th/vim-vsnip",
   "homepage": "https://github.com/softvisio/vim-vsnip",
