@@ -1,6 +1,7 @@
 {
   "name": "@neovim-plugins/vim-vsnip",
   "version": "1.0.0",
+  "private": true,
   "description": "Fork of hrsh7th/vim-vsnip",
   "homepage": "https://github.com/neovim-plugins/vim-vsnip",
   "bugs": {
